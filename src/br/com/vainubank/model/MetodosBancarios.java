@@ -1,6 +1,8 @@
-package br.com.vainaweb.backend.desafios.vainubank;
+package br.com.vainubank.model;
 
 import java.util.List;
+
+import br.com.vainubank.controller.Conta;
 
 public interface MetodosBancarios {
 

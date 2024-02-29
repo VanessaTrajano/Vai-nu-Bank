@@ -1,10 +1,14 @@
-package br.com.vainaweb.backend.desafios.vainubank;
+package br.com.vainubank.controller;
 
 import java.util.List;
 import java.util.Scanner;
 
+import br.com.vainubank.model.MetodosBancarios;
+
 public class ContaCorrente extends Conta implements MetodosBancarios{
 
+	static Scanner sc = new Scanner(System.in);
+	
 	private double limiteDeCredito;
 	
 	public ContaCorrente() {
@@ -67,34 +71,7 @@ public class ContaCorrente extends Conta implements MetodosBancarios{
 
 	@Override
 	public String toString() {
-		return "ContaCorrente [nome = " + getNome() + ", cpf = " + getCpf() + ", numConta = " + getNumConta() + ", agencia = " + getAgencia() + ", limite de crédito = " + limiteDeCredito + "]";
-	}
-
-	@Override
-	public void deletarConta() {
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("Tem certeza que deseja deletar do sistema a conta de número " + this.getNumConta() + "? Digite 1 para sim e 2 para não.");
-		int decisao = sc.nextInt();
-		
-		switch(decisao) {
-		case 1:
-			this.limiteDeCredito = 0;
-			this.setAgencia(null);
-			this.setCpf(null);
-			this.setNome(null);
-			this.setNumConta(null);
-			this.setSaldo(0);
-			System.out.println("Sua conta acaba de ser deletada com sucesso!");
-			break;
-		case 2:
-			System.out.println("Ação cancelada!");
-			break;
-		default:
-			System.err.println("Código inválido!");
-		}
-		
-		sc.close();
+		return "ContaCorrente [nome = " + getNome() + ", cpf = " + getCpf() + ", numConta = " + getNumConta() + ", agencia = " + getAgencia() + ", saldo = " + getSaldo() + ", limite de crédito = " + limiteDeCredito + "]";
 	}
 
 }

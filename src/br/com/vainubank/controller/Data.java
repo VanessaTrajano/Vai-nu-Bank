@@ -1,4 +1,4 @@
-package br.com.vainaweb.backend.desafios.vainubank;
+package br.com.vainubank.controller;
 
 public class Data {
 	private int dia;

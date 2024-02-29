@@ -1,4 +1,4 @@
-package br.com.vainaweb.backend.desafios.vainubank;
+package br.com.vainubank.controller;
 
 public abstract class Conta {
 	private String nome;
@@ -54,5 +54,4 @@ public abstract class Conta {
 	
 	
 	public abstract String toString();
-	public abstract void deletarConta();
 }
