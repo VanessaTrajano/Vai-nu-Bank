@@ -5,7 +5,7 @@ Esse é o Desafio 1 do Módulo 2 do curso Desenvolvedor(a) Back-End da Escola de
 Esse projeto tem o objetivo de estudarmos Loops, Tratamento de exceções, Condicionais, Interfaces, Classes Abstratas, Collections, Classe, atributos e Objetos
 
 ## Diagrama de Classes
-<img height="420" width="fit-content" src="https://i.imgur.com/fYj45YR.png">
+<img height="420" width="fit-content" src="https://i.imgur.com/2lS2rDY.png">
 
 ## Tecnologias Utilizadas
 <div display="flex">
